@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudminds | Secure AI Gateway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ededed; }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: linear-gradient(90deg, #a855f7, #3b82f6); }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-900 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-[#0a0a0a]/80 backdrop-blur-md border-b border-gray-800 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center">
+                <!-- Cloudminds SVG Logo (Secure Node) -->
+                <svg width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3">
+                    <defs>
+                        <linearGradient id="azureGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#a855f7" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M10 5H5V35H10" stroke="url(#azureGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30 5H35V35H30" stroke="url(#azureGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 25L20 15L28 25" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="20" cy="28" r="3" fill="url(#azureGradient)"/>
+                </svg>
+                <div class="font-bold text-xl tracking-tight">Cloudminds<span class="text-purple-500">.</span></div>
+            </div>
+            <a href="#sprint" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">AI Sprint anfragen</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-6 max-w-5xl mx-auto text-center">
+        <div class="inline-block mb-4 px-3 py-1 rounded-full border border-gray-700 bg-gray-900/50 text-xs font-semibold text-gray-300 tracking-wide uppercase">
+            Swiss precision. AI-powered.
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+            Beenden Sie Shadow AI. <br>
+            <span class="gradient-text">Direkt in Ihrer Landing Zone.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Das Tenant-native Secure AI Gateway für hochregulierte Enterprise-Umgebungen. Stellen Sie Multi-Model-KI (GPT-4o & Claude) sicher bereit – kontrolliert durch Entra ID und striktes Client-Tiering.
+        </p>
+        <a href="#sprint" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-4 px-8 rounded-lg shadow-lg shadow-purple-900/20 transition-all transform hover:-translate-y-1">
+            Architektur-Review starten
+        </a>
+        <p class="mt-4 text-xs text-gray-500">Kein SaaS-Umweg. Volle Datensouveränität in Ihrem Azure-Tenant.</p>
+    </section>
+
+    <!-- Problem & Solution Section -->
+    <section class="py-20 bg-[#111] border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 border border-gray-700">
+                    <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Die Multi-Model-Falle</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Copilot zwingt Sie in ein Monopol. Wenn Fachabteilungen Anthropic Claude verlangen, weichen sie auf private Web-Accounts aus. Die Governance bricht.</p>
+            </div>
+            <div>
+                <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 border border-gray-700">
+                    <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Das BYOD-Risiko</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Ohne hartes Client-Tiering greifen Mitarbeiter via iPad oder Heim-PC auf Firmendaten zu. Ein absoluter Albtraum für Ihre Data Loss Prevention.</p>
+            </div>
+            <div>
+                <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 border border-gray-700">
+                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Der Kosten-Blindflug</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Schatten-KI entzieht sich der Budgetkontrolle. Sie benötigen hartes API-Rate-Limiting und Quotas auf User-Level, um Token-Kosten zu drosseln.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section (Stealth Qualification) -->
+    <section id="sprint" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 md:p-12 shadow-2xl">
+            <div class="mb-10 text-center">
+                <h2 class="text-3xl font-bold mb-4">Der AI Architecture Sprint</h2>
+                <p class="text-gray-400">Lassen Sie uns in 4 Stunden die Lücken Ihrer aktuellen Azure- und Identity-Architektur schließen. (Fixpreis: 5.800 CHF).</p>
+            </div>
+
+            <!-- Lead Capture Form -->
+            <form id="leadForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-2">Business E-Mail</label>
+                        <input type="email" id="email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" placeholder="ciso@enterprise.ch">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-2">Name & Rolle</label>
+                        <input type="text" id="role" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" placeholder="Max Muster, Lead Enterprise Architect">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-300 mb-3">Was ist aktuell Ihr größter Blocker bei der KI-Bereitstellung?</label>
+                    <div class="space-y-3">
+                        <label class="flex items-start cursor-pointer group">
+                            <input type="radio" name="blocker" value="copilot" required class="mt-1 text-purple-600 focus:ring-purple-500 bg-gray-800 border-gray-600">
+                            <span class="ml-3 text-gray-400 group-hover:text-white transition-colors">Copilot ist zu teuer / architektonisch eine Blackbox.</span>
+                        </label>
+                        <label class="flex items-start cursor-pointer group">
+                            <input type="radio" name="blocker" value="multimodel" class="mt-1 text-purple-600 focus:ring-purple-500 bg-gray-800 border-gray-600">
+                            <span class="ml-3 text-gray-400 group-hover:text-white transition-colors">Fachabteilungen fordern Multi-Model (Claude), aber Security blockiert.</span>
+                        </label>
+                        <label class="flex items-start cursor-pointer group">
+                            <input type="radio" name="blocker" value="byod" class="mt-1 text-purple-600 focus:ring-purple-500 bg-gray-800 border-gray-600">
+                            <span class="ml-3 text-gray-400 group-hover:text-white transition-colors">Schatten-KI auf privaten Geräten umgeht unsere Perimeter.</span>
+                        </label>
+                        <label class="flex items-start cursor-pointer group">
+                            <input type="radio" name="blocker" value="architecture" class="mt-1 text-purple-600 focus:ring-purple-500 bg-gray-800 border-gray-600">
+                            <span class="ml-3 text-gray-400 group-hover:text-white transition-colors">Es fehlt eine klare, Tenant-native Azure-Architektur für AI.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-lg transition-colors mt-8">
+                    Architektur-Review anfragen
+                </button>
+            </form>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="hidden text-center py-10">
+                <div class="w-16 h-16 bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-green-700">
+                    <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Anfrage erhalten.</h3>
+                <p class="text-gray-400">Wir analysieren Ihre Parameter und melden uns in Kürze mit Terminvorschlägen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-10 text-center">
+        <p class="text-gray-500 text-sm">© 2026 Cloudminds. Swiss precision. AI-powered.</p>
+        <div class="mt-4 space-x-4 text-xs text-gray-600">
+            <a href="#" class="hover:text-gray-400">Impressum</a>
+            <a href="#" class="hover:text-gray-400">Datenschutz</a>
+        </div>
+    </footer>
+
+    <!-- Form Handling Script with Backend Webhook Hook -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const role = document.getElementById('role').value;
+            const blocker = document.querySelector('input[name="blocker"]:checked').value;
+
+            // UI sofort umschalten für flüssige UX
+            this.classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+
+            // HIER DEINEN N8N / MAKE WEBHOOK URL EINTRAGEN
+            const webhookUrl = 'https://dein-n8n-or-make-webhook-url.com/webhook/leads';
+
+            try {
+                await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, role, blocker, timestamp: new Date().toISOString() })
+                });
+            } catch (error) {
+                console.error('Stealth-Enrichment Trigger Failed:', error);
+                // Fail-silent im Frontend, damit der CISO keine Fehlermeldung sieht
+            }
+        });
+    </script>
+</body>
+</html>
